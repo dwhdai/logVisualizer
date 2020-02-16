@@ -1,0 +1,9 @@
+INFO [2020-02-16 15:16:48] Starting the script...
+DEBUG [2020-02-16 15:16:48] This is the second log line
+TRACE [2020-02-16 15:16:48] Note that the 2nd line is being placed right after the 1st one.
+SUCCESS [2020-02-16 15:16:48] Doing pretty well so far!
+WARN [2020-02-16 15:16:48] But beware, as some errors might come :/
+ERROR [2020-02-16 15:16:48] This is a problem
+DEBUG [2020-02-16 15:16:48] Note that getting an error is usually bad
+ERROR [2020-02-16 15:16:48] This is another problem
+FATAL [2020-02-16 15:16:48] The last problem

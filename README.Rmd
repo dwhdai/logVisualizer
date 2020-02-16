@@ -17,39 +17,30 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build status](https://travis-ci.org/dwhdai/logVisualizer.svg?branch=master)](https://travis-ci.org/dwhdai/logVisualizer)
 <!-- badges: end -->
 
-The goal of logVisualizer is to ...
+## Foreword
+
+The goal of `logVisualizer` is to create a simple application that allows data scientists to visualize production logs. 
+
+As a data scientist in a small team, I commonly find myself navigating through the file-systems to look at daily production logs. Sometimes, I am troubleshooting an error that my application encountered; other times, I just want to make sure that everything executed as intended, regardless of whether a fatal error occurred.
+
+Another thing I noticed is that while my intentions of logging were great, my logs lacked consistency. Aside from throwing the occasional error, it's unclear that my current logs provided useful information. 
+
+As projects scale up and new projects start up, I would like to 1) automate as much as possible, and 2) ensure that all relevant information is readily available for inspection. The latter speaks to doing a deep-dive on **what** should be logged (and *how* they should be logged), which is outside of the scope of this project. The former, however, was the motivation behind this project.
+
+## `logVisualizer` - the application
+
+`logVisualizer` is a Shiny application that allows data scientists to easily visualize production logs. Rather than navigating to each log-file individually, one can point the paths of log directories that they would like to monitor. `logVisualizer` is a central hub for logged information, displayed in an easily digestible manner. 
 
 ## Installation
 
 You can install the released version of logVisualizer from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("logVisualizer")
+devtools::install_github("dwhdai/logVisualizer")
 ```
 
-## Example
 
-This is a basic example which shows you how to solve a common problem:
 
-```{r example}
-library(logVisualizer)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
